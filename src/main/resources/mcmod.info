@@ -1,0 +1,16 @@
+[
+{
+  "modid": "clayheads",
+  "name": "ClayHeads",
+  "description": "Adds Vanilla-esque Head crafting and naming to enable builds with Custom Heads.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["prodzpod"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

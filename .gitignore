@@ -1,3 +1,20 @@
+bin/**
+build/**
+run/**
+eclipse/**
+
+.gradle/**
+gradle/**
+.classpath
+.settings/**
+
+*.iml
+*.ipr
+*.iws
+
+
+# default github java stuff below
+
 # Compiled class file
 *.class
 
