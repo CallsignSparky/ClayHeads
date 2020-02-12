@@ -22,7 +22,7 @@ public class ClayHeads {
 
     public static final String MODID = "clayheads";
     public static final String MODNAME = "ClayHeads";
-    public static final String MODVERSION = "1.0.2";
+    public static final String MODVERSION = "1.0.3";
 
     @SidedProxy(clientSide= "prodzpod.clayheads.proxy.ClientProxy", serverSide= "prodzpod.clayheads.proxy.CommonProxy")
     public static CommonProxy proxy;
