@@ -22,7 +22,7 @@ public class ClayHeads {
 
     public static final String MODID = "clayheads";
     public static final String MODNAME = "ClayHeads";
-    public static final String MODVERSION = "0.0.1";
+    public static final String MODVERSION = "1.0.2";
 
     @SidedProxy(clientSide= "prodzpod.clayheads.proxy.ClientProxy", serverSide= "prodzpod.clayheads.proxy.CommonProxy")
     public static CommonProxy proxy;
@@ -45,7 +45,8 @@ public class ClayHeads {
             ResourceLocation group = new ResourceLocation(MODNAME);
             GameRegistry.addShapelessRecipe(new ResourceLocation(MODID, "Player Head Crafting"), group,
                     new ItemStack(Items.SKULL, 1, 3),
-                    Ingredient.fromItems(Items.CLAY_BALL, Items.CLAY_BALL, Items.CLAY_BALL, Items.ROTTEN_FLESH));
+                    Ingredient.fromItem(Items.CLAY_BALL), Ingredient.fromItem(Items.CLAY_BALL),
+                    Ingredient.fromItem(Items.CLAY_BALL), Ingredient.fromItem(Items.ROTTEN_FLESH));
         }
     }
 }
