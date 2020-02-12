@@ -21,7 +21,7 @@ public class TooltipPatch {
 		if (Minecraft.getMinecraft().currentScreen instanceof GuiRepair) { // first off, check if we're viewing anvils
 			ItemStack output = event.getItemStack();
 			if (output.getItem() instanceof ItemSkull && output.getItemDamage() == 3) // check for player head
-				event.getToolTip().add("\u00A7c" + I18n.format("tooltip.clayheads.anvilwarning"));
+				event.getToolTip().add("\u00A7c" + I18n.translateToLocal("tooltip.anvilwarning"));
 		}
 	}
 }
