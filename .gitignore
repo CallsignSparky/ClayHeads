@@ -8,6 +8,7 @@ gradle/**
 .classpath
 .settings/**
 
+.idea/**
 *.iml
 *.ipr
 *.iws

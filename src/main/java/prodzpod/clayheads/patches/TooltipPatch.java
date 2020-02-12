@@ -3,6 +3,7 @@ package prodzpod.clayheads.patches;
 import net.minecraft.block.BlockAnvil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiRepair;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.item.ItemSkull;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -20,7 +21,7 @@ public class TooltipPatch {
 		if (Minecraft.getMinecraft().currentScreen instanceof GuiRepair) { // first off, check if we're viewing anvils
 			ItemStack output = event.getItemStack();
 			if (output.getItem() instanceof ItemSkull && output.getItemDamage() == 3) // check for player head
-				event.getToolTip().add("\u00A7cThe Skull Textures will change upon confirming the rename.");
+				event.getToolTip().add("\u00A7c" + I18n.format("tooltip.clayheads.anvilwarning"));
 		}
 	}
 }
